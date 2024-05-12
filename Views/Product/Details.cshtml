@@ -1,0 +1,31 @@
+﻿<body>
+    
+<div style="display:flex; flex-wrap:wrap"> 
+<div class="row">
+
+<div class="col-xl-5 justify-content-center">
+    <img id="product_img" width="350px" height="300px" src="~/img/@Model.Image" />
+</div>
+
+
+<div class="col-xl-5">
+<h2><b id="product_name">@Model.Name  </b></h2>
+<h5 id="product_price" style="margin-bottom:5px "> @Model.Price $ </h5>
+<input id="product_amount" style="margin:8px" type="number" min="1" max="100" />
+<button type="button" style="margin:8px" class="btn btn-primary rounded-4">Add to cart</button>
+<h2 style="margin-top:20px">Product details :  </h2>
+<h5 id="product_description"> @Model.Description  </h5>
+</div>
+
+<a href="/product/all" class="btn btn-primary">Go back</a>
+
+</div>
+</div>
+
+
+   @*  <script>
+/**/        var products = @Html.Raw(Json.Serialize(Model));         // meaning?????
+    </script> *@
+
+    <script src="~/js/productDetails.js"></script>
+</body>

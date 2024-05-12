@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img\ph2.webp" />
+    <None Include="wwwroot\img\ph3.webp" />
+    <None Include="wwwroot\img\ph4.jfif" />
+  </ItemGroup>
+
+</Project>

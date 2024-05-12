@@ -1,0 +1,18 @@
+﻿@* <img src="~/img/ph1.webp" />
+<img src="~/img/ph4.jfif" /> *@
+@* @ViewData.Model = Model *@
+
+<div id="main_div">
+
+    @for (int i = 0; i < Model.Count; i++)
+    {
+    <div class="card product_div" style="width: 18rem;">
+    <img src="~/img/@Model[i].Image" class="card-img-top" alt="photo @Model[i].Id">
+  <div class="card-body">
+        <h5 class="card-title">@Model[i].Name</h5>
+            <a href="/product/Details?id=@Model[i].Id" class="btn btn-primary">Show details</a>
+  </div>
+</div>
+    }
+
+</div>
